@@ -1,10 +1,10 @@
 # Souscription à Géoservices
 
-le site internet https://www.geoportail.gouv.fr/ met à disposition gratuitement certaines données de l'IGN. Il est possible à des applications tierces comme l'application mobile iphigénie ou des sites tiers de cartographie de tirer profit gratuitement de ces données à travers les Géoservices IGN.
+le site internet https://www.geoportail.gouv.fr/ met à disposition gratuitement certaines données de l'IGN. Il est possible à des applications tierces comme l'application mobile iphigénie ou des sites tiers de cartographie de tirer profit gratuitement de ces données à travers les [Géoservices IGN](https://geoservices.ign.fr/).
 
-Dans le cadre de la démarche Open-Data, Géoservices est accessible gratuitement  aux particuliers. À date du 1 mars 2021, il est cependant toujours nécessaire de demander auprès de Géoservices la création d'une clé afin d'accéder aux données.
+Dans le cadre de la démarche open-data engagée par le gouvernement français, Géoservices est accessible gratuitement aux particuliers. À date du 1 mars 2021, il est cependant toujours nécessaire de demander auprès de Géoservices la création d'une clé personnelle afin d'accéder à leurs données.
 
-Cette clé sera ensuite à mentionner dans le fichier de configuration d'AlpineQuest décrivant comment accéder aux cartes IGN.
+Cette clé est ensuite à mentionner dans le fichier de configuration d'AlpineQuest décrivant comment accéder aux cartes IGN.
 
 Voici les étapes permettant d'obtenir une clé Géoservices.
 
