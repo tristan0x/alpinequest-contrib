@@ -9,6 +9,7 @@ Cette clé est ensuite à mentionner dans le fichier de configuration d'AlpineQu
 Voici les étapes permettant d'obtenir une clé Géoservices.
 
 1. Ouvrir le formulaire de demande: https://www.sphinxonline.com/surveyserver/s/etudesmk/Geoservices_2021/questionnaire.htm#49
+1. Demander la création d'une clé de ressources gratuites 
     ![formulaire-geoservices](./images/geoservices-form-1.png)
 1. Choisir une clé pour un site Web (WMTS ...)
     ![formulaire-geoservices](./images/geoservices-form-2.png)
