@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="7">
+
+	<name>France Maps</name>
+	<description>© IGN · www.geoportail.gouv.fr</description>
+
+	<param name="geokey">API_KEY</param>
+
+	<source id="IGNTOPO">
+		<name>Carte Topo</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>TOPO</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.630,43.305,15</preview-location>
+		<level>
+			<zoom-values>3,5,6,7,8,9,10,11,12,13,14,15,16</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNSCANEXPR">
+		<name>Carte Scan Express</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>TOPO</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.630,43.305,15</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15,16,17,18</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNAERO">
+		<name>Images aériennes</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>SATE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.90,44.80,12</preview-location>
+		<level>
+			<zoom-values>3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=ORTHOIMAGERY.ORTHOPHOTOS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNFRASTER">
+		<name>Carte Raster</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>ROAD</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.629,43.296,17</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15,16,17,18,19</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNLITTO">
+		<name>Carte du littoral</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>NAUT</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.74,43.13,14</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15,16</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.COASTALMAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNCADA" layer="true">
+		<name>Parcelles cadastrales</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.611,43.187,16</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15,16,17,18</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=CADASTRALPARCELS.PARCELS&style=bdparcellaire&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNADMI" layer="true">
+		<name>Limites administratives</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>4.61,45.25,12</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15,16,17,18</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=ADMINISTRATIVEUNITS.BOUNDARIES&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNSLOPES" layer="true">
+		<name>Cartes des pentes</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.90,44.80,12</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15,16</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<bbox-crs-code>EPSG:3857</bbox-crs-code>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNFDRNREST" layer="true">
+		<name>Restrictions drones</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>1.3,46.6,7</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<bbox-crs-code>EPSG:3857</bbox-crs-code>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=TRANSPORTS.DRONES.RESTRICTIONS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNFEXPBRUIT" layer="true">
+		<name>Plan d'expo. bruit</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.1,43.5,8</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14</zoom-values>
+			<update-delay>3M</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<bbox-crs-code>EPSG:3857</bbox-crs-code>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/v/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=TRUE&LAYERS=DGAC-PEB_BDD_FXX_WM_WMS&CRS=EPSG%3A3857&STYLES=&WIDTH=256&HEIGHT=256&BBOX={$bbox}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNOACI">
+		<name>Carte OACI-VFR</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.90,44.80,11</preview-location>
+		<level>
+			<zoom-values>5,6,7,8,9,10,11</zoom-values>
+			<update-delay>None</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-OACI&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGN1950">
+		<name>Carte de 1950</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.90,44.80,12</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15</zoom-values>
+			<update-delay>None</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNETATMAJOR">
+		<name>Carte de l'état-major (1820-1866)</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.90,44.80,12</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15</zoom-values>
+			<update-delay>None</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+	<source id="IGNCASS">
+		<name>Carte de Cassini</name>
+		<data-source><![CDATA[http://www.geoportail.gouv.fr/carte]]></data-source>
+		<copyright>IGN</copyright>
+		<region>EURO</region>
+		<type>OTHE</type>
+		<outline>-5.2863048,48.2630684 -4.7700205,47.7077533 -2.6215266,46.743755 -1.8713018,45.8928143 -1.7341641,44.8510794 -2.2396919,43.1339397 -0.0831311,42.3627533 3.6679938,42.1526225 3.6679938,42.7809116 4.0498285,43.067525 5.0259279,42.9102539 6.0934523,42.4726375 6.8275429,42.8678418 7.3008029,43.0977197 8.392528,42.7991144 7.9300234,42.0319382 8.4705084,41.3837406 9.0083037,41.3175261 9.734328,41.5118374 9.9064226,42.41975 9.6509696,43.1641017 7.9407788,43.7184781 8.064472,44.3782036 7.5051647,44.9311416 7.5454993,45.8640273 6.8382978,46.6927281 7.776751,47.4306496 8.0348928,48.101335 8.7824291,49.1326734 6.9566125,49.7242759 5.7008596,49.9252171 4.5472877,50.4406028 3.2243097,51.0319818 2.4041712,51.8293496 1.7749504,51.2326293 0.7047368,50.5720819 0.9064101,50.1518234 -0.69891,49.7812626 -1.9681078,50.2100723 -2.3660765,49.759901 -2.0138205,49.1723349 -2.4790136,48.9537998 -3.1512579,49.2623585 -4.62213,49.094783 -5.2863048,48.2630684</outline>
+		<preview-location>5.90,44.80,12</preview-location>
+		<level>
+			<zoom-values>6,7,8,9,10,11,12,13,14,15</zoom-values>
+			<update-delay>None</update-delay>
+			<servers>
+				<referer><![CDATA[http://www.geoportail.gouv.fr/carte]]></referer>
+				<server><![CDATA[http://wxs.ign.fr/{$param:geokey}/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.CASSINI&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$z}&TileCol={$x}&TileRow={$y}]]></server>
+			</servers>
+		</level>
+	</source>
+
+</aqx>
+
+
