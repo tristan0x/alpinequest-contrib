@@ -1,4 +1,6 @@
-# paraglidingearth-french-sites.gpx
+This document makes a census of all GPX files available in this directory.
+
+## paraglidingearth-french-sites.gpx
 
 Extraction of all french paragliding sites from
 https://paraglidingearth.com/api/
