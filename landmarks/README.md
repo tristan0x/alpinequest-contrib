@@ -3,7 +3,7 @@
 Extraction of all french paragliding sites from
 https://paraglidingearth.com/api/
 
-GPX file is available here: [paraglidingearth-french-sites.gpx](./paraglidingearth-french-sites.gpx)
+GPX file is available here: [paraglidingearth-french-sites.gpx](https://raw.githubusercontent.com/tristan0x/alpinequest-contrib/master/landmarks/paraglidingearth-french-sites.gpx)
 
 To build the GPX file on your own:
 1. Install [togpx](git@github.com:tyrasd/togpx.git) utility
